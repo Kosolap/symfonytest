@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title></title>
+        {% include 'default/scripts&style.html.twig' %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    {% include 'default/head.html.twig' %}
+
+    {%  block body %}{% endblock %}
+
+    {% include 'default/footer.html.twig' %}
     </body>
 </html>

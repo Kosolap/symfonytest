@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+
+    <div id="centcont">
+
+        Здесь будет главная страница!
+        <br/>
+        <form>
+
+            <input type="text" id="name"/>
+
+        </form>
+        <br/>
+        <button id="addUser">Добавить пользователя</button>
+        <button id="getUsers">Получить список пользователей</button>
+        <br/>
+        <br/>
+
+        <table id="usersTable"></table>
+
+    </div>
+
+{% endblock %}

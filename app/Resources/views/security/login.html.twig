@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+
+    <div id="centcont">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+
+                    <h1>Login!</h1>
+                    {% if error %}
+                        <div class="alert alert-danger">
+                            {{ error.messageKey|trans(error.messageData, 'security') }}
+                        </div>
+                    {% endif %}
+                    {{ form_start(form) }}
+                    {{ form_row(form._username) }}
+                    {{ form_row(form._password) }}
+                    ... line 18
+                    {{ form_end(form) }}
+
+                </div>
+                <div class="col-xs-4">
+                    BootsTrap Test
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
